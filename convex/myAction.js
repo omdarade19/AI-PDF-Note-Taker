@@ -17,7 +17,7 @@ export const ingest = action({
     const { ConvexVectorStore } = await import("@langchain/community/vectorstores/convex");
 
     const embeddings = new GoogleGenerativeAIEmbeddings({
-      apiKey: process.env.GOOGLE_API_KEY, // 
+      apiKey: "AIzaSyCY99txxibfigdL8as7g7Rj2fupiY8j01I", 
       model: "text-embedding-004",
       taskType: TaskType.RETRIEVAL_DOCUMENT,
       title: "Document title",
@@ -48,7 +48,7 @@ export const search = action({
 
     const vectorStore = new ConvexVectorStore(
       new GoogleGenerativeAIEmbeddings({
-        apiKey: process.env.GOOGLE_API_KEY,
+        apiKey: "AIzaSyCY99txxibfigdL8as7g7Rj2fupiY8j01I",
         model: "text-embedding-004",
         taskType: TaskType.RETRIEVAL_DOCUMENT,
         title: "Document title",
