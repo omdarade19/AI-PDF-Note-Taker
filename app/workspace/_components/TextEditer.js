@@ -18,7 +18,7 @@ function TextEditer({fileId}) {
      const editor = useEditor({
     extensions: [StarterKit,
       Placeholder.configure({
-        placeholder: 'start taking your notes !'
+        placeholder: 'For taking notes, select the question and press the sparkle icon '
       }),
        TextAlign.configure({
       types: ['heading', 'paragraph'],

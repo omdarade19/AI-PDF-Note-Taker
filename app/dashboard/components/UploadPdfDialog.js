@@ -38,6 +38,7 @@ function UploadPdfDialog({children, isMaxFiles}){
     setFile(event.target.files[0]);
   }
 
+
   const OnUpload=async(event)=>{
      setLoading(true)
     //  1: Get short lived upload url
@@ -109,9 +110,9 @@ function UploadPdfDialog({children, isMaxFiles}){
      </DialogHeader>
      <DialogFooter>
         <DialogClose asChild>
-           <Button type="button" variant="secondary">
-             Close
-           </Button>
+          <Button type="button" variant="secondary" onClick={()=>setOpen(false)}>
+              Close
+            </Button>
         </DialogClose>
         <Button onClick={OnUpload} disabled={loading}>
           {loading?
