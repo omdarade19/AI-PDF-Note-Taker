@@ -76,7 +76,7 @@ AI-PDF-Note-Taker/
 ```
 ## Usage
 
-```javascript
+```bash
 1.Navigate to the homepage.
 
 2.Upload your PDF file.
